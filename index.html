@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Demo</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Offline Demo</h1>
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+        </header>
+
+        <section class="form-section">
+            <h2>Add a new item</h2>
+            <form id="dataForm" class="data-form">
+                <input type="text" id="key" placeholder="Key" required>
+                <input type="text" id="value" placeholder="Value" required>
+                <button type="submit" class="add-button">Add to IndexDB</button>
+            </form>
+        </section>
+
+        <section class="items-section">
+            <h2>Stored Items</h2>
+            <ul id="itemsList" class="items-list"></ul>
+        </section>
+    </div>
+
+    <!-- Script -->
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
